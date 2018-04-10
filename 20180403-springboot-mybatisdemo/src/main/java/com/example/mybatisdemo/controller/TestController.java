@@ -22,8 +22,9 @@ public class TestController {
     private PersonSlaverDao personSlaverDao;
 
     @RequestMapping("/test1")
-    public List<Person> test1(int id){
-        return personDao.getPersonById(id);
+    public List<Person> test1(){
+        int[] ids={1,2};
+        return personDao.getPersonById(ids);
     }
 
     @RequestMapping("/test2")
