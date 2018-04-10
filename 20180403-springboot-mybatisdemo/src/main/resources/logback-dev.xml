@@ -56,6 +56,6 @@
     </root>
 
     <!--额外需要打印的日志-->
-    <logger name="com.example.demo.dao" level="DEBUG"></logger>
+    <logger name="com.example.mybatisdemo.dao" level="DEBUG"></logger>
 
 </configuration>
