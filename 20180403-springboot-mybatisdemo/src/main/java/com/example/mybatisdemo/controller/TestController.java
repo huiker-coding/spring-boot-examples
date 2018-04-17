@@ -28,7 +28,7 @@ public class TestController {
     }
 
     @RequestMapping("/test2")
-    public List<PersonSlaver> test2(int id){
-        return personSlaverDao.getPersonById(id);
+    public PersonSlaver test2(int id){
+        return personSlaverDao.findPersonById(id);
     }
 }

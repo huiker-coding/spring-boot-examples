@@ -1,16 +1,15 @@
 package com.example.mybatisdemo.dao.slaver;
 
 import com.example.mybatisdemo.dao.slaver.entity.PersonSlaver;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
+import org.springframework.stereotype.Repository;
 
-import java.util.List;
-
-@Mapper
+/**
+ * 方法二：采用xml配置的方法拼接sql语句，本例采用了free-mybatis插件进行xml代码生成
+ *
+ * */
+@Repository
 public interface PersonSlaverDao {
-    @Select("select name from tbl_person where id=#{id}")
-    public String getNameById(int id);
-
-    @Select("select * from tbl_person where id=#{id}")
-    public List<PersonSlaver> getPersonById(int id);
+     String hello="fds";
+  PersonSlaver findPersonById(int id);
+  String  findName();
 }
