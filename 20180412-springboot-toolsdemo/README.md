@@ -2,9 +2,9 @@
 - 20180403
 
 > 项目说明：
-- 1.spring-boot-devtools：devtools可以实现页面热部署（即页面修改后会立即生效，这个可以直接在application.properties文件中配置spring.thymeleaf.cache=false来实现），      
-                                    实现类文件热部署（类文件修改后不会立即生效），实现对属性文件的热部署。   
-                                    即devtools会监听classpath下的文件变动，并且会立即重启应用（发生在保存时机），注意：因为其采用的虚拟机机制，该项重启是很快的 
+- 1.devtools：devtools可以实现接口和页面热部署(即不用重启服务)
+    使用方法见：https://www.cnblogs.com/sprinkle/p/7058630.html
+
 - 2.lombok：能方便的进行get和set,主要注解如下：
             @Getter and @Setter
             @ToString
@@ -19,3 +19,7 @@
             @Accessors
             @Wither
             @SneakyThrows
+    使用方法见：https://juejin.im/post/5aa8db75f265da239c7b0e76
+            
+- 3.swagger2：能方便的生成接口API在线文档
+    使用方法见：https://blog.csdn.net/saytime/article/details/74937664
